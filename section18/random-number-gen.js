@@ -3,12 +3,11 @@ const randomNumb = Math.random();
 const min = prompt('Enter the minimum Number');
 const max = prompt('Enter the maximum Number');
 
-function getRandomNumber(min, max) {
-  const i = 0;
+function getRandomNumber(minimum, maximum) {
   let temp = Math.random();
-  while(!(Math.floor(temp) > min && Math.floor(temp) < max)) {
+  while (!(Math.floor(temp) > minimum && Math.floor(temp) < maximum)) {
     console.log(temp);
-    temp = Math.floor(Math.random() * (max - 1));
+    temp = Math.floor(Math.random() * (maximum - 1));
   }
   return temp;
 }
