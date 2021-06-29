@@ -14,7 +14,7 @@ function changePara3() {
 let counter = 1;
 function changeFont() {
   const chgFont = document.getElementById('p4');
-  chgFont.style.fontSize = `${counter++ * 2}em`;
+  chgFont.style.fontSize = `${(counter += 1) * 2}em`;
   console.log(chgFont.style.fontSize);
 }
 
