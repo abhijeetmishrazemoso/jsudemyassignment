@@ -31,9 +31,13 @@ function setLoremString() {
 }
 function getLoremIpsumString() {
   const noOfSentences = document.getElementById('lorem-ipsum').value;
-  const noOfWordsPerSentence = 14;
-  const finalWords = noOfWordsPerSentence * noOfSentences;
-  document.getElementById('based-sentences').innerHTML = getNumberOfWords(finalWords);
+  const sentenceArray = lorem.split('.');
+  let result = '';
+  for (let index = 0; index < noOfSentences; index++) {
+    result += `${sentenceArray[index]}. `;
+  }
+    document.getElementById('based-sentences').innerHTML = result;
+
 }
 function getLoremIpsumOnChars() {
   const noOfChars = document.getElementById('lorem-ipsum-chars').value;
