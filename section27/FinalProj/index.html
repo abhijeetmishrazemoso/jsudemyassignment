@@ -80,38 +80,38 @@
     <div>
         <h2>Compares if two words are the same length</h2>
         <label for="rand">First Word</label>
-        <input type="text" name="rand1">
+        <input type="text" name="rand1" id="word1">
         <label for="rand">Second Word</label>
-        <input type="text" name="rand2">
-        <button>Click Me</button>
-        <p>Blah</p>
+        <input type="text" name="rand2" id="word2">
+        <button onclick="doWordLengthComparison()">Click Me</button>
+        <p id="word-compare-res">Blah</p>
     </div>
     <hr>
     <div>
         <h2>Returns a random password</h2>
-        <button>Click Me</button>
-        <p>Blah</p>
+        <button onclick="getRandPassword()">Click Me</button>
+        <p id="rand-pass-res">Blah</p>
     </div>
     <hr>
     <div>
         <!-- Challenge. See if you can use the % symbol. Google "javascript modulo". -->
         <h2>Tells you if the number is even or odd</h2>
         <label for="rand">Number</label>
-        <input type="text" name="rand">
-        <button>Click Me</button>
-        <p>Blah</p>
+        <input type="number" name="rand" id="even-odd">
+        <button onclick="isNoEvenOrOdd()">Click Me</button>
+        <p id="even-odd-res">Blah</p>
     </div>
     <hr>
     <div>
         <h2>Returns a random color</h2>
-        <button>Click Me</button>
-        <p>Blah</p>
+        <button onclick="getRandomColor()">Click Me</button>
+        <p id="random-color-result">Blah</p>
     </div>
     <hr>
     <div>
         <h2>Returns a random first and last name</h2>
-        <button>Click Me</button>
-        <p>Blah</p>
+        <button onclick="getRandFirstAndLastName()">Click Me</button>
+        <p id="rand-first-last-res">Blah</p>
     </div>
     <hr>
 </body>
