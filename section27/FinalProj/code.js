@@ -5,6 +5,13 @@ function getBetweenPrefixed() {
   document.getElementById('rand-numb').innerHTML = getRandomNumber();
 }
 function getRandomNumber(minimum = 1, maximum = 100) {
+  if (minimum > maximum) {
+    console.log('Minimum cannot be more than maximum. Check your inputs');
+    return;
+  }
+  if (minimum === maximum) {
+    return minimum;
+  }
   let temp = Math.random();
   while (!(Math.floor(temp) > minimum && Math.floor(temp) < maximum)) {
     temp = Math.floor(Math.random() * (maximum - 1));
@@ -36,8 +43,7 @@ function getLoremIpsumString() {
   for (let index = 0; index < noOfSentences; index++) {
     result += `${sentenceArray[index]}. `;
   }
-    document.getElementById('based-sentences').innerHTML = result;
-
+  document.getElementById('based-sentences').innerHTML = result;
 }
 function getLoremIpsumOnChars() {
   const noOfChars = document.getElementById('lorem-ipsum-chars').value;
