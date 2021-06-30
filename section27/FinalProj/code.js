@@ -7,7 +7,7 @@ function getBetweenPrefixed() {
 function getRandomNumber(minimum = 1, maximum = 100) {
   if (minimum > maximum) {
     console.log('Minimum cannot be more than maximum. Check your inputs');
-    return;
+    return -1;
   }
   if (minimum === maximum) {
     return minimum;
