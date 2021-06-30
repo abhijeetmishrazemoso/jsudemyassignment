@@ -73,7 +73,7 @@ function doWordLengthComparison() {
   }
 }
 
-const allChars = 'abcdefigklmnopqrstuvwxyz0123456789';
+const allChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefigklmnopqrstuvwxyz0123456789';
 function getRandPassword() {
   const len = 10;
   let result = '';
